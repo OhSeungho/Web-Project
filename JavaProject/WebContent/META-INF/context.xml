@@ -1,0 +1,17 @@
+<Context path="/JavaProject" docBase="ww">
+<Resource
+	name="jdbc/JavaProject"
+	auth="Container"
+	type="javax.sql.DataSource"
+	driverClassName="com.mysql.jdbc.Driver"
+	loginTimeout="10"
+	validationQuery="SELECT 1 FROM DUAL"
+	maxWait="5000"
+	username="root"
+	password="6465"
+	testOnBorrow="true"
+	url="jdbc:mysql://localhost::3306/JavaProject?serverTimezone=UTC"/>
+<ResourceLink type="javax.sql.data.DataSource"
+	name="jdbc/JavaProject"
+	global="jdbc/JavaProject"/>
+</Context>
